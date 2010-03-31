@@ -1,5 +1,5 @@
 #summary Links to 64 bit Avisynth plugins
-#labels Phase-Support
+#labels Phase-Support,Featured
 
 ==64-Bit Plugin Collection ==
 ----
