@@ -21,7 +21,7 @@
     * EEDI2 uses a copy of Avisynth's BitBlt function (basically, a looping memory copy), finally wrote my own, compiled EEDI2 with it
     * If this build runs slower than [http://www.mediafire.com/?yrjx4ijzycz the older version] please let me know
 
-[http://www.mediafire.com/?jqyziyme1zd"]Built on 3/12/2010: MaskTools 2.0a x64]
+[http://www.mediafire.com/?jqyziyme1zd Built on 3/12/2010: MaskTools 2.0a x64]
 
 
 [http://www.mediafire.com/?jm2zwzdmmmz Built on 3/31/2010: MVTools2 x64]
@@ -49,12 +49,12 @@
 
 [http://www.mediafire.com/?ynkidzz4joz FeildHints x64]
 
-[http://www.mediafire.com/?ztjwmywqmm4 Built on 3/20/2010: Color Matrix x64[/URL]
+[http://www.mediafire.com/?ztjwmywqmm4 Built on 3/20/2010: Color Matrix x64]
 
 [http://www.mediafire.com/?mzddfmjjdyx Built on 3/14/2010: AutoCrop x64]
 
 
-[http://www.mediafire.com/?c0wmemj5jam Built on 3/19/2010: DgDecode 1.5.8 x64[/URL]
+[http://www.mediafire.com/?c0wmemj5jam Built on 3/19/2010: DgDecode 1.5.8 x64]
     * Note: Is missing some IDCT modes, will get them back ASAP
 
 [http://kemuri9.net/dev/avs/ffms2/x64/ffms2.dll kemuri-_9's FFMS2 (The Fabulous FM Source 2)]
@@ -64,7 +64,7 @@
 
 [http://www.mediafire.com/?zv0jm3mtmzf Built on 3/20/2010: TTempSmooth x64 v0.9.4]
 
-[http://www.mediafire.com/?w0trndmni3j Built on 3/29/2010: GradFun2DB x64[/URL]
+[http://www.mediafire.com/?w0trndmni3j Built on 3/29/2010: GradFun2DB x64]
 
 
 [http://www.mediafire.com/?imj5nkwdkj1 Built on 3/21/2010: AddGrainC x64]
@@ -85,4 +85,3 @@ To simply run the script through Avisynth, execute the following at a command pr
 {{{
 avs2avi64.exe <path:\script.avs> -o n
 }}}
-
