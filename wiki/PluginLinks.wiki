@@ -1,0 +1,88 @@
+#summary Links to 64 bit Avisynth plugins
+
+==64-Bit Plugin Collection ==
+----
+
+*Updated 3/31/2010*
+
+[http://www.mediafire.com/?i2qtli1mxik Built on 3/13/2010: Beta TIVTC x64]
+
+[http://www.mediafire.com/?oemygnmkrji Built on 3/13/2010: DFTTest x64]
+    * Needs the included libfftw3f-3.dll to be in your system32 directory
+
+[http://www.mediafire.com/?kmcztm1xzjm Built on 3/14/2010: TDeint x64]
+    * This is basically the same as squid80's build, main differences being newer avisynth.h and newer compiler
+
+[http://www.mediafire.com/?tqmjdnjdnum Built on 3/14/2010: LeakKernelDeint x64]
+
+
+[http://www.mediafire.com/?humzogd2o1m Built on 3/31/2010: EEDI2 x64]
+    * Further restructured main loop to minimize branching, processor dependent speed increase
+    * EEDI2 uses a copy of Avisynth's BitBlt function (basically, a looping memory copy), finally wrote my own, compiled EEDI2 with it
+    * If this build runs slower than [http://www.mediafire.com/?yrjx4ijzycz the older version] please let me know
+
+[http://www.mediafire.com/?jqyziyme1zd"]Built on 3/12/2010: MaskTools 2.0a x64]
+
+
+[http://www.mediafire.com/?jm2zwzdmmmz Built on 3/31/2010: MVTools2 x64]
+    * Continued conversion and updating of assembly functions
+    * Removal of some code intended to support processors without mmx/iSSE
+    * Converted often used assembly functions to SSE2 instead of mmx/iSSE
+    * Updated to latest shared function library from x264
+    * Healthy 20%+ speed increase over x86 version in most cases
+
+
+[http://www.mediafire.com/?2ymcyfuzzzw Built on 3/12/2010: FFT3DFilter]
+    * Needs the included libfftw3f-3.dll to be in your system32 directory
+
+[http://www.mediafire.com/?qjmyjt52miz RemoveGrain x64]
+
+[http://www.mediafire.com/?q00r32yegnh Repair x64]
+
+[http://www.mediafire.com/?mjctqyjnoxh VerticalCleaner x64]
+
+[http://www.mediafire.com/?2chnt1jkwwm Built on 3/15/2010: FFT3DGPU x64[/URL]
+    *note: This ones just because it's nice to have a 64bit FFT filter, since the bulk of the computation is on the GPU, I doubt there's much of a performance difference.
+    *note2: The hlsl (shader program) file is edited from the original to adhere to pixel shader 3.0 syntax rules.  Please make sure to place the correct file in the same directory as the 64bit plugin. 
+
+[http://www.mediafire.com/?wnemmzntgnh TelecideHints x64]
+
+[http://www.mediafire.com/?ynkidzz4joz FeildHints x64]
+
+[http://www.mediafire.com/?ztjwmywqmm4 Built on 3/20/2010: Color Matrix x64[/URL]
+
+[http://www.mediafire.com/?mzddfmjjdyx Built on 3/14/2010: AutoCrop x64]
+
+
+[http://www.mediafire.com/?c0wmemj5jam Built on 3/19/2010: DgDecode 1.5.8 x64[/URL]
+    * Note: Is missing some IDCT modes, will get them back ASAP
+
+[http://kemuri9.net/dev/avs/ffms2/x64/ffms2.dll kemuri-_9's FFMS2 (The Fabulous FM Source 2)]
+    * Big thanks to kemuri-_9 for the build
+
+[http://www.mediafire.com/?y4e3zd2zodd Built on 3/20/2010: TNLMeans_x64 v1.0.3]
+
+[http://www.mediafire.com/?zv0jm3mtmzf Built on 3/20/2010: TTempSmooth x64 v0.9.4]
+
+[http://www.mediafire.com/?w0trndmni3j Built on 3/29/2010: GradFun2DB x64[/URL]
+
+
+[http://www.mediafire.com/?imj5nkwdkj1 Built on 3/21/2010: AddGrainC x64]
+
+
+[http://www.mediafire.com/?mjmfnuwf2ky Built on 3/21/2010: aWarpSharp x64]
+  * This version is based on SEt's original rewrite found [http://forum.doom9.org/showthread.php?t=147285 in this thread]
+
+[http://members.optusnet.com.au/squid_80/ Visit Squid80's homepage] for more x64 plugins
+
+
+
+==Benchmarking Suggestions==
+
+Here is a [http://www.mediafire.com/?yykmkawa40j 64bit avs2avi for benchmarking].  You can run it against [http://moitah.net/ the original]
+
+To simply run the script through Avisynth, execute the following at a command prompt:
+{{{
+avs2avi64.exe <path:\script.avs> -o n
+}}}
+
