@@ -1,4 +1,5 @@
 #summary Links to 64 bit Avisynth plugins
+#labels Phase-Support
 
 ==64-Bit Plugin Collection ==
 ----
@@ -42,8 +43,8 @@
 [http://www.mediafire.com/?mjctqyjnoxh VerticalCleaner x64]
 
 [http://www.mediafire.com/?2chnt1jkwwm Built on 3/15/2010: FFT3DGPU x64[/URL]
-    *note: This ones just because it's nice to have a 64bit FFT filter, since the bulk of the computation is on the GPU, I doubt there's much of a performance difference.
-    *note2: The hlsl (shader program) file is edited from the original to adhere to pixel shader 3.0 syntax rules.  Please make sure to place the correct file in the same directory as the 64bit plugin. 
+    * Note: This ones just because it's nice to have a 64bit FFT filter, since the bulk of the computation is on the GPU, I doubt there's much of a performance difference.
+    * Note2: The hlsl (shader program) file is edited from the original to adhere to pixel shader 3.0 syntax rules.  Please make sure to place the correct file in the same directory as the 64bit plugin. 
 
 [http://www.mediafire.com/?wnemmzntgnh TelecideHints x64]
 
