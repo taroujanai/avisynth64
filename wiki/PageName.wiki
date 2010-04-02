@@ -66,3 +66,10 @@ This test does a simple Spline64Resize(1536,996) to test odd ratios.
 || *32 bit* || 210.63 fps || 210.63 fps || 210.63 fps || _210.63 fps_ ||
 || *64 bit* || 222.36 fps || 222.36 fps || 222.36 fps || _222.36 fps_ ||
 || *Relative Increase* || 105.6% || 105.6% || 105.6% || _105.6%_ ||
+
+And this is just for kicks, PointResize(11840,7680) --> 16x larger
+
+|| *Version* || *Run 1* || *Run 2* || *Run3* || *Average* ||
+|| *32 bit* || 21.87 fps || 21.93 fps || 21.81 fps || _21.87 fps_ ||
+|| *64 bit* || 29.64 fps || 29.53 fps || 29.64 fps || _29.60 fps_ ||
+|| *Relative Increase* || 135.5% || 134.7% || 135.9% || _135.3%_ ||
