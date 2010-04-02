@@ -1,0 +1,17 @@
+#summary Benchmark comparisons with Avisynth 2.60 alpha 2.
+
+== Benchmarks ==
+
+All of the benchmarks were done using avs2avi, a program that reads an Avisynth script and then can output the resulting video and audio to any available video for windows compressor.  The original program (32 bit) can be found [http://moitah.net/download/latest/AVS2AVI.zip here.]  The program is open source, and was compiled for x64, enabling reading of 64 bit Avisynth scripts.  It is available [http://www.mediafire.com/?yykmkawa40j here.]
+
+These benchmarks were done to a null output, meaning that the script was read and processed, but no data was written to disk.
+
+Compression was not used in any of these tests.
+
+All tests were conducted on an Intel Core i5-750 running at 3.71GHz with 4GB of ram.  All tests were conducted three times, averaging the results.  The input clip used was a 2000 frame DVSD capture in the YV12 color space. 
+
+Avisynth 2.6 alpha 2 was used for the 32 bit benchmarks.  This was chosen because the code is stable for all input patterns used, and includes a variety of updates to enhance the speed of various internal processes.
+
+===TempGaussMC===
+
+This is a very CPU intensive 
