@@ -23,9 +23,9 @@ This is a motion-compensated bob deinterlacer, based on temporal gaussian blurri
 Beta 2 was used for these test, default settings were used.
 
 || *Version* || *Run 1* || *Run 2* || *Run3* || *Average* ||
-|| *32 bit* || 5.11 fps || x || x || x ||
-|| *64 bit* || 6.58 fps || 6.58 fps || 6.57 fps || 6.576 fps ||
-|| *Relative Increase* || 128.8% || x || x || x ||
+|| *32 bit* || 5.11 fps || 5.14 fps || 5.13 fps || _5.127 fps_ ||
+|| *64 bit* || 6.58 fps || 6.58 fps || 6.57 fps || _6.576 fps_ ||
+|| *Relative Increase* || 128.8% || 128.0% || 128.3% || _128.3%_ ||
 
 ==== A simple Anti-Aliasing filter ====
 
@@ -50,3 +50,10 @@ return maskmerge
 
 MergeChroma(ds,maskmerge)
 }}}
+
+Here are the results:
+
+|| *Version* || *Run 1* || *Run 2* || *Run3* || *Average* ||
+|| *32 bit* || 3.30 fps || 3.30 fps || 3.30 fps || _3.30 fps_ ||
+|| *64 bit* || 4.22 fps || 4.24 fps || 4.25 fps || _4.237 fps_ ||
+|| *Relative Increase* || 127.9% || 128.5% || 128.9% || _128.4%_ ||
