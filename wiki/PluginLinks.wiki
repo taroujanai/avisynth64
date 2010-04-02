@@ -17,7 +17,7 @@
 [http://www.mediafire.com/?tqmjdnjdnum Built on 3/14/2010: LeakKernelDeint x64]
 
 
-[http://www.mediafire.com/?humzogd2o1m Built on 3/31/2010: EEDI2 x64]
+[http://www.mediafire.com/?2y2ozjmnhxn Built on 4/01/2010: EEDI2 x64]
     * Further restructured main loop to minimize branching, processor dependent speed increase
     * EEDI2 uses a copy of Avisynth's BitBlt function (basically, a looping memory copy), finally wrote my own, compiled EEDI2 with it
     * If this build runs slower than [http://www.mediafire.com/?yrjx4ijzycz the older version] please let me know
@@ -25,7 +25,7 @@
 [http://www.mediafire.com/?jqyziyme1zd Built on 3/12/2010: MaskTools 2.0a x64]
 
 
-[http://www.mediafire.com/?jm2zwzdmmmz Built on 3/31/2010: MVTools2 x64]
+[http://www.mediafire.com/?2yjmze2ommz Built on 4/01/2010: MVTools2 x64]
     * Continued conversion and updating of assembly functions
     * Removal of some code intended to support processors without mmx/iSSE
     * Converted often used assembly functions to SSE2 instead of mmx/iSSE
