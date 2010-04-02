@@ -2,16 +2,25 @@
 
 == Benchmarks ==
 
+These benchmarks are intended to give the end user an idea of the performance difference they can expect when using Avisynth64 instead of the original Avisynth.
+
 All of the benchmarks were done using avs2avi, a program that reads an Avisynth script and then can output the resulting video and audio to any available video for windows compressor.  The original program (32 bit) can be found [http://moitah.net/download/latest/AVS2AVI.zip here.]  The program is open source, and was compiled for x64, enabling reading of 64 bit Avisynth scripts.  It is available [http://www.mediafire.com/?yykmkawa40j here.]
 
 These benchmarks were done to a null output, meaning that the script was read and processed, but no data was written to disk.
 
 Compression was not used in any of these tests.
 
-All tests were conducted on an Intel Core i5-750 running at 3.71GHz with 4GB of ram.  All tests were conducted three times, averaging the results.  The input clip used was a 2000 frame DVSD capture in the YV12 color space. 
+All tests were conducted on an Intel Core i5-750 running at 3.71GHz with 4GB of ram.  All tests were conducted three times, averaging the results.  All tests were run using a single thread, as there is no multi-threading support in the official 32 bit Avisynth.  The input clip used was a 2000 frame DVSD capture in the YV12 color space. 
 
 Avisynth 2.6 alpha 2 was used for the 32 bit benchmarks.  This was chosen because the code is stable for all input patterns used, and includes a variety of updates to enhance the speed of various internal processes.
 
-===TempGaussMC===
+====[http://avisynth.org/mediawiki/TempGaussMC TempGaussMC]====
 
-This is a very CPU intensive 
+This is a motion-compensated bob deinterlacer, based on temporal gaussian blurring. Reduces noise/grain of the source and does NOT leave the original fields unchanged. Output is rich with details and very stable.  It is very CPU intensive, but the results are worth the wait.
+
+Beta 2 was used for these test, default settings were used.
+
+|| *Version* || *Run 1* || *Run 2* || *Run3* || *Average* ||
+|| *32 bit* || x || x || x || x ||
+|| *64 bit* || 6.58 fps || 6.58 fps || x || x ||
+|| *Relative Increase* || x || x || x || x ||
