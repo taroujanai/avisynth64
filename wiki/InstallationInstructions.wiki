@@ -7,7 +7,9 @@
   #2 Have the 32 bit version of Avisynth installed to begin with, it's installer will setup all the system paths and registry entries
   #3 Run the installtion script (provided by Turbojet of the Doom9 forums) included in the archive *as administrator*
     * This DLL will not interact or interfere with any of the functionality of your 32 bit Avisynth installation
+    * Avisynth 32-bit is located in C:\<Windows Root>\SysWOW64, this version installs to (as backwards as it may seem) C:\<Windows Root>\System32
   #4 If this does not work for you, Copy included DevIL.dll and avisynth.dll into your C:\Windows\System32 directory
+    * Again, it's backwards, but all 64bit binaries are located in System32
   #5 This DLL will only work with 64 bit programs, and 64 bit codecs
     * Virtual Dub has a 64 bit version that will load avs files using this binary [http://virtualdub.sourceforge.net/ download it here].  Be sure to get the 64bit version, second section down
     * 64 bit vfw codecs are required, a good place to go is [http://sourceforge.net/projects/ffdshow-tryout/ ffdshow-tryouts.]  Once again, be sure to download a build that was COMPILED FOR x64
@@ -22,4 +24,5 @@
   #9 Report any feedback, problems, questions, and concerns on the doom9 forum [http://forum.doom9.org/showthread.php?p=1374745#post1374745 in this thread.]  
     * There you will find the collection of plugins I've personally ported for use with this project.  
     * If it's a bug, please provide a clip and sample script so I can recreate it
-  #1 If there are any plugins you routinely use that you'd like to see supported in the 64bit version of Avisynth, please stop by the forum and let me know.  I will do my best to fulfill any feature requests, just keep in mind that I'm only human, and the only human actively compiling this source :)
+  #1 Alternatively, file an issue report on google code
+  #2 If there are any plugins you routinely use that you'd like to see supported in the 64bit version of Avisynth, please stop by the forum and let me know.  I will do my best to fulfill any feature requests, just keep in mind that I'm only human, and the only human actively compiling this source :)
