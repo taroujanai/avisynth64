@@ -14,6 +14,8 @@ All tests were conducted on an Intel Core i5-750 running at 3.71GHz with 4GB of 
 
 Avisynth 2.6 alpha 2 was used for the 32 bit benchmarks.  This was chosen because the code is stable for all input patterns used, and includes a variety of updates to enhance the speed of various internal processes.
 
+Relative increase was determined using the simple formula: (Avisynth64 fps) / (Avisynth32 fps)
+
 ====[http://avisynth.org/mediawiki/TempGaussMC TempGaussMC]====
 
 This is a motion-compensated bob deinterlacer, based on temporal gaussian blurring. Reduces noise/grain of the source and does NOT leave the original fields unchanged. Output is rich with details and very stable.  It is very CPU intensive, but the results are worth the wait.
@@ -21,6 +23,30 @@ This is a motion-compensated bob deinterlacer, based on temporal gaussian blurri
 Beta 2 was used for these test, default settings were used.
 
 || *Version* || *Run 1* || *Run 2* || *Run3* || *Average* ||
-|| *32 bit* || x || x || x || x ||
-|| *64 bit* || 6.58 fps || 6.58 fps || x || x ||
-|| *Relative Increase* || x || x || x || x ||
+|| *32 bit* || 5.11 fps || x || x || x ||
+|| *64 bit* || 6.58 fps || 6.58 fps || 6.57 fps || 6.576 fps ||
+|| *Relative Increase* || 128.8% || x || x || x ||
+
+==== A simple Anti-Aliasing filter ====
+
+This test uses a "simple" filter to anti-alias a clip.  It uses the plugins.  EEDI2 and MaskTools v2.0a36.  Both are available in 32 and 64 bit flavors. 
+
+{{{
+input=AviSource("D:\testfile.avi")
+
+ox = width(input)
+oy = height(input)
+
+aa = input.TurnRight().EEDI2(field=0).TurnLeft().EEDI2(field=0)
+
+edge = mt_logic(mt_edge(aa, "5 10 5 0 0 0 -5 -10 -5 4", 0, 255, 0, 255),
+	\ mt_edge(aa, "5 0 -5 10 0 -10 5 0 -5 4", 0, 255, 0, 255), "max").Greyscale().
+	\ Levels(0, 0.8, 128, 0, 255, false).Spline36Resize(ox, oy, -0.5, -0.5, 2 * ox, 2 * oy)
+
+ds = Spline36Resize(aa, ox, oy, -0.5, -0.5, 2 * ox, 2 * oy)
+
+maskmerge = mt_merge(input, ds, edge, U=1, V=1)
+return maskmerge
+
+MergeChroma(ds,maskmerge)
+}}}
