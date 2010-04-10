@@ -17,7 +17,7 @@
 [http://www.mediafire.com/?tqmjdnjdnum Built on 3/14/2010: LeakKernelDeint x64]
 
 
-[http://www.mediafire.com/?2y2ozjmnhxn Built on 4/01/2010: EEDI2 x64]
+[http://www.mediafire.com/?znmyzdo2ize Built on 4/10/2010: EEDI2 x64]
     * Further restructured main loop to minimize branching, processor dependent speed increase
     * EEDI2 uses a copy of Avisynth's BitBlt function (basically, a looping memory copy), finally wrote my own, compiled EEDI2 with it
     * If this build runs slower than [http://www.mediafire.com/?yrjx4ijzycz the older version] please let me know
