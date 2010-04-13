@@ -34,8 +34,8 @@ Note: Is missing some IDCT modes, will get them back ASAP
 Built on 4/10/2010
 
 [http://www.mediafire.com/?znmyzdo2ize EEDI2 x64]
-+ Vectorized main loop
-+ Further restructured main loop to minimize branching, processor dependent speed increase
+  * Vectorized main loop
+  * Further restructured main loop to minimize branching, processor dependent speed increase
 
 
 [http://www.mediafire.com/?ynkidzz4joz FeildHints x64]
@@ -47,7 +47,7 @@ Built on 3/12/2010
 Built on 3/15/2010
 
 [http://www.mediafire.com/?2chnt1jkwwm FFT3DGPU x64]
-note:The hlsl (shader program) file is edited from the original to adhere to pixel shader 3.0 syntax rules.  Please make sure to place the correct file in the same directory as the 64bit plugin. 
+  * The hlsl (shader program) file is edited from the original to adhere to pixel shader 3.0 syntax rules.  Please make sure to place the correct file in the same directory as the 64bit plugin. 
 
 New on 3/13/2010
 
@@ -72,11 +72,11 @@ Built on of 3/12/2010
 Built on 3/31/2010
 
 [http://www.mediafire.com/?2yjmze2ommz MVTools2 x64]
-+ Continued conversion and updating of assembly functions
-+ Removal of some code intended to support processors without mmx/iSSE
-+ Converted often used assembly functions to SSE2 instead of mmx/iSSE
-+ Updated to latest shared function library from x264
-+ Healthy 20%+ speed increase over x86 version in most cases
+  * Continued conversion and updating of assembly functions
+  * Removal of some code intended to support processors without mmx/iSSE
+  * Converted often used assembly functions to SSE2 instead of mmx/iSSE
+  * Updated to latest shared function library from x264
+  * Healthy 20%+ speed increase over x86 version in most cases
 
 New on 3/14/2010
 
