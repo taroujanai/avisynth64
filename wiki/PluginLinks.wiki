@@ -5,56 +5,72 @@
 ----
 
 New on 3/21/2010
+
 [http://www.mediafire.com/?imj5nkwdkj1 AddGrainC x64]
 
 Built on 3/14/2010
+
 [http://www.mediafire.com/?mzddfmjjdyx AutoCrop x64]
 
 New on 3/21/2010
+
 [http://www.mediafire.com/?mjmfnuwf2ky aWarpSharp x64]
+
 This version is based on SEt's original rewrite found [http://forum.doom9.org/showthread.php?t=147285 in this thread]
 
 Built on 3/20/2010
+
 [http://www.mediafire.com/?ztjwmywqmm4 Color Matrix x64]
 
 New on 3/13/2010
+
 [http://www.mediafire.com/?oemygnmkrji DFTTest x64]-->needs the included libfftw3f-3.dll to be in your system32 directory
 
 Built on 3/19/2010
+
 [http://www.mediafire.com/?c0wmemj5jam DgDecode 1.5.8 x64]
 Note: Is missing some IDCT modes, will get them back ASAP
 
 Built on 4/10/2010
+
 [http://www.mediafire.com/?znmyzdo2ize EEDI2 x64]
 + Vectorized main loop
 + Further restructured main loop to minimize branching, processor dependent speed increase
 
+
 [http://www.mediafire.com/?ynkidzz4joz FeildHints x64]
 
 Built on 3/12/2010
+
 [http://www.mediafire.com/?2ymcyfuzzzw FFT3DFilter]-->needs the included libfftw3f-3.dll to be in your system32 directory
 
 Built on 3/15/2010
+
 [http://www.mediafire.com/?2chnt1jkwwm FFT3DGPU x64]
 note:The hlsl (shader program) file is edited from the original to adhere to pixel shader 3.0 syntax rules.  Please make sure to place the correct file in the same directory as the 64bit plugin. 
 
 New on 3/13/2010
+
 [http://kemuri9.net/dev/avs/ffms2/x64/ffms2.dll kemuri-_9's FFMS2 (The Fabulous FM Source 2)]
 Big thanks to kemuri-_9 for the build
 
 Built on 3/29/2010
+
 [http://www.mediafire.com/?w0trndmni3j GradFun2DB x64]
 
 Built on 4/08/2010
+
 [http://www.mediafire.com/?gyvmmzx0v4z hqdn3d x64]
 
 Built on 3/14/2010
+
 [http://www.mediafire.com/?tqmjdnjdnum LeakKernelDeint x64]
 
 Built on of 3/12/2010
 [http://www.mediafire.com/?jqyziyme1zd MaskTools 2.0a x64]
 
 Built on 3/31/2010
+
 [http://www.mediafire.com/?2yjmze2ommz MVTools2 x64]
 + Continued conversion and updating of assembly functions
 + Removal of some code intended to support processors without mmx/iSSE
@@ -63,19 +79,23 @@ Built on 3/31/2010
 + Healthy 20%+ speed increase over x86 version in most cases
 
 New on 3/14/2010
+
 [http://www.mediafire.com/?kmcztm1xzjm TDeint x64]
 This is basically the same as squid80's build, main differences being newer avisynth.h and newer compiler
 
 [http://www.mediafire.com/?wnemmzntgnh TelecideHints x64]
 
 Built on 3/13/2010:
+
 [http://www.mediafire.com/?i2qtli1mxik TIVTC x64]
 
 
 New on 3/20/2010
+
 [http://www.mediafire.com/?y4e3zd2zodd TNLMeans_x64 v1.0.3]
 
 New on 3/20/2010
+
 [http://www.mediafire.com/?zv0jm3mtmzf TTempSmooth x64 v0.9.4]
 
 [http://www.mediafire.com/?qjmyjt52miz RemoveGrain x64]
